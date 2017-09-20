@@ -10,7 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// original route commented
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
+//# here is the new step 2
+Route::get('/', 'PagesController@index');
+
+//kl added here the route to page
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('users/{id}', function ($id) {
+    return '<p>This is user #'.$id.'</p>';
 });

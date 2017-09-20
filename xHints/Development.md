@@ -17,3 +17,13 @@
 6. restart server on xampp
 that's it. very nice trick done...  
 
+#Setting the stuff up
+1. Here is the main initial route
+    `D:\xampp\htdocs\epicapplication\routes\web.php`
+
+2. creating a controller
+```
+php artisan make:controller PagesController  
+
+D:\xampp\htdocs\epicapplication\app\Http\Controllers\PagesController.php
+```
