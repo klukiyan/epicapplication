@@ -15,14 +15,16 @@
 //     return view('welcome');
 // });
 
-//# here is the new step 2
-Route::get('/', 'PagesController@index');
 
 //kl added here the route to page
-Route::get('/about', function () {
-    return view('pages.about');
-});
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
 
-Route::get('users/{id}', function ($id) {
-    return '<p>This is user #'.$id.'</p>';
-});
+// Route::get('users/{id}', function ($id) {
+//     return '<p>This is user #'.$id.'</p>';
+// });
+//# here is the new step 3
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
