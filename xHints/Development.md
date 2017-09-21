@@ -27,3 +27,6 @@ php artisan make:controller PagesController
 
 D:\xampp\htdocs\epicapplication\app\Http\Controllers\PagesController.php
 ```
+3. then comes the layout to be extended
+
+4. ... stopped at part 4
