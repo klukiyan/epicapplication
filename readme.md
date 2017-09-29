@@ -44,3 +44,20 @@ getting started
 somehow it didn't work so I stole components from his site
 
 5. ... stopped here
+__creating the database needed__
+```
+php artisan make:controller PostsController  
+php artisan make:model Post -m  
+```
+-m at the end stands for the migration included
+
+- when all done  
+php artisan migrate
+
+some useless crap here
+    $ php artisan tinker
+    App\Post::count()
+
+
+php artisan make:controller PostsController --resource
+**this way it gets nicely created right away
