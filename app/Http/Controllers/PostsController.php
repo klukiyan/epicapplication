@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostsController extends Controller
 {
@@ -13,7 +14,14 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        //return Post::all(); //this one just returns the array
+        //now let's do the right way
+             //$posts = Post::all();  //MAIN STARTING
+        //$posts = Post::orderBy('title', 'asc')->get();  // for sorting filtering commands 
+        //$posts = Post::orderBy('title', 'asc')->take(1)->get();  // for sorting filtering commands 
+        //$posts = DB::select('select * from posts', [1]); //here is also an example of using SQL directly
+        $posts = Post::orderBy('id', 'desc')->paginate(10); //this one gets the pagination and needs links in index.blade.php
+        return view('posts.index')->with('posts', $posts);
     }
 
     /**
@@ -23,7 +31,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -34,7 +42,19 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' =>  'required',
+            'body' => 'required'
+            
+        ]);
+        //Finally creating the post into DB
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+        
+        return redirect('/posts')->with('success', 'Post Created');
+
     }
 
     /**
@@ -45,7 +65,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        return view('posts.show ')->with('post', $post);
     }
 
     /**

@@ -29,6 +29,10 @@
               <li><a href="/posts">Blog</a></li>
             </ul>
 
+            {{--  KL this section adds the link on right to create a new post  --}}
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/posts/create">Create Post</a></li>
+            </ul>
             <!-- Right Side Of Navbar -->
             {{--  <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
