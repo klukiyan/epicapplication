@@ -30,3 +30,15 @@ Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
 Route::resource('posts', 'PostsController');
+
+
+//this is my extra page for testing and research
+Route::get('/research', function () {
+    return view('pages.research');
+});
+Route::get('/research2', function () {
+    return view('pages.research2');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
