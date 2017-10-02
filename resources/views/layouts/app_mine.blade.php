@@ -8,10 +8,12 @@
         <title>{{config('app.name', 'My mega application')}}</title>
     </head>
     <body>
-        @include('inc.navbar')
         <div class="container">
+            @include('inc.navbar')
             @include('inc.messages')
+            <div class="container">
             @yield('content')
+            </div>
         </div>
                 <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
                     <script>
