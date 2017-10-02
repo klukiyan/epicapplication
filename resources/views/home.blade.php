@@ -22,9 +22,10 @@
                             </tr>
                             @foreach($posts as $post)
                             <tr>
-                                <td>{{$post->title}}</td>
-                                <td><a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a></td>
+                                <td style="width:35%"><img src="/storage/cover_images/{{$post->cover_image}}" class="img img-thumbnail img-circle"></td>
+                                <td><a href="/posts/{{$post->id}}">{{$post->title}}<a></td>
                                 <td>
+                                    <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
                                     {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}
                                         {{Form::hidden('_method', 'DELETE')}}
                                         {{Form::submit('Delete', ['Class'=>'btn btn-danger'])}}
