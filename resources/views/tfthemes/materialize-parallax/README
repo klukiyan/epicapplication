@@ -1,0 +1,26 @@
+LARAVEL THEMEFACTORY THEME
+==========================
+
+Thank you for trying out ThemeFactory.net!
+
+INSTALLATION
+------------
+
+Just simply unzip the downloaded zip file in your main Laravel folder (ie: `unzip theme123.zip`)
+It should place all the files in their required folders, for example:
+
+/public/tfthemes/theme123/css/...
+/public/tfthemes/theme123/js/...
+/public/tfthemes/theme123/images/...
+/resources/views/tfthemes/theme123/README
+/resources/views/tfthemes/theme123/master.blade.php
+/resources/views/tfthemes/theme123/home.blade.php
+... and so on
+
+Update your `app/Http/routes.php` file to use the new theme, for example:
+
+Route::get("/", function(){
+  return View::make("tfthemes.theme123.home"); 
+});
+
+https://laravel.themefactory.net

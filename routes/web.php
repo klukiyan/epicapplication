@@ -25,7 +25,14 @@
 //     return '<p>This is user #'.$id.'</p>';
 // });
 //# here is the new step 3
-Route::get('/', 'PagesController@index');
+
+Route::get("/", function(){
+    return View('tfthemes.materialize-parallax.home'); 
+  });
+  Route::get("/master", function(){
+    return View('tfthemes.materialize-parallax.master'); 
+  });
+// Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
