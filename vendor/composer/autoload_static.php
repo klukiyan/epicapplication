@@ -16,6 +16,7 @@ class ComposerStaticInit3e43e6101c8bf4a54ae25edaf8cfb8a5
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
+        'd7354eb4c8441fbf08eec280b61c7c73' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -59,6 +60,7 @@ class ComposerStaticInit3e43e6101c8bf4a54ae25edaf8cfb8a5
         'R' => 
         array (
             'Ramsey\\Uuid\\' => 12,
+            'RachidLaasri\\LaravelInstaller\\' => 30,
         ),
         'P' => 
         array (
@@ -191,6 +193,10 @@ class ComposerStaticInit3e43e6101c8bf4a54ae25edaf8cfb8a5
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'RachidLaasri\\LaravelInstaller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src',
         ),
         'Psy\\' => 
         array (
@@ -2795,6 +2801,23 @@ class ComposerStaticInit3e43e6101c8bf4a54ae25edaf8cfb8a5
         'Psy\\VersionUpdater\\GitHubChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/GitHubChecker.php',
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/NoopChecker.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\DatabaseController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/DatabaseController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\EnvironmentController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/EnvironmentController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\FinalController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/FinalController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\PermissionsController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/PermissionsController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\RequirementsController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/RequirementsController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\UpdateController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/UpdateController.php',
+        'RachidLaasri\\LaravelInstaller\\Controllers\\WelcomeController' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Controllers/WelcomeController.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\DatabaseManager' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/DatabaseManager.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\EnvironmentManager' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/EnvironmentManager.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\FinalInstallManager' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/FinalInstallManager.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\InstalledFileManager' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/InstalledFileManager.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\MigrationsHelper' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/MigrationsHelper.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\PermissionsChecker' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/PermissionsChecker.php',
+        'RachidLaasri\\LaravelInstaller\\Helpers\\RequirementsChecker' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Helpers/RequirementsChecker.php',
+        'RachidLaasri\\LaravelInstaller\\Middleware\\canInstall' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Middleware/canInstall.php',
+        'RachidLaasri\\LaravelInstaller\\Middleware\\canUpdate' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Middleware/canUpdate.php',
+        'RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider' => __DIR__ . '/..' . '/rachidlaasri/laravel-installer/src/Providers/LaravelInstallerServiceProvider.php',
         'Ramsey\\Uuid\\BinaryUtils' => __DIR__ . '/..' . '/ramsey/uuid/src/BinaryUtils.php',
         'Ramsey\\Uuid\\Builder\\DefaultUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DefaultUuidBuilder.php',
         'Ramsey\\Uuid\\Builder\\DegradedUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DegradedUuidBuilder.php',
